@@ -1,0 +1,63 @@
+$col:black;
+
+%txt-center {
+    text-align: center
+}
+
+#row{
+    @extend %txt-center;
+    color:$col;
+}
+
+p, h2, h1{
+    color: green;
+    text-align: center;
+    margin-left: 20px;
+    @media (max-width: 575px) {
+        font-size: 15px
+    }
+    @media (min-width: 576px ) and (max-width: 768px) {
+        font-size: 15px
+    }
+    @media (min-width: 768.99px ) and (max-width: 991px) {
+        font-size: 16px
+    }
+    @media (min-width: 991.99px ) and (max-width: 1199px) {
+        font-size: 17px
+    }
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+
+    th{
+        @extend %txt-center;
+    }
+  }
+
+* {
+    text-align: center;
+    color: blue;
+}
+
+table.tap, tr, th{
+    @extend %txt-center;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border: 1px solid #ddd;
+}
+
+h1{
+    @extend %txt-center;
+    color: blue;
+}
+
+
+
+#list{
+    text-align: center;
+}
+
